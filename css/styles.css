@@ -1,0 +1,224 @@
+/* Variables */
+:root {
+    --main-color:#434455;
+    --backgroud-color: #FFFFFF;
+    --logo-color:#4D5AE5;
+    --nav-header-color: #2E2F42;    
+    --button-color: #4D5AE5;    
+    --btn-bgd:#F4F4FD;
+    --button-hover-background: #404BBF; 
+
+}
+
+
+/* Bases */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);  
+    background-color: var(--backgroud-color);
+    margin: 0;   
+}
+
+.link{
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.section-title-hidden {
+    visibility: hidden;
+}
+
+/* header */
+.logo{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;  
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-color);
+}
+
+.logo-header {
+    color: var(--nav-header-color);
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--nav-header-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--button-hover-background);
+}
+
+address{
+    font-style: normal;
+}
+
+.header-link-item{
+    text-decoration: none;
+    color: var(--main-color);    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;       
+    letter-spacing: 0.02em;
+}
+
+.header-link-item:hover,
+.header-link-item:focus {
+    color: var(--button-hover-background);
+}
+
+/* Hero */
+.hero-container {
+    background-color: var(--nav-header-color);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;       
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--backgroud-color);
+
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--backgroud-color);
+    background-color: var(--button-color);
+    border-style: hidden;
+    cursor: pointer;   
+}
+
+.hero-button:hover,
+.hero-button:focus {
+     background-color: var(--button-hover-background);
+}
+
+.section-feature-title{
+    color: var(--nav-header-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;       
+    letter-spacing: 0.02em;
+}
+
+.section-feature-text{  
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.section-title{
+    color: var(--nav-header-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;        
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.section-team-container{
+    background-color: var(--btn-bgd);
+}
+
+.team-list-item{
+    background-color: var(--backgroud-color);
+}
+
+.team-image {
+     background-color: var(--backgroud-color);
+}
+
+.team-title{
+    color: var(--nav-header-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;        
+    text-align: center;
+    letter-spacing: 0.02em;
+} 
+
+.team-text{     
+    font-size: 16px;
+    line-height: 1.5;       
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+
+/* Portfolio - Filters - Buttons */
+.button{
+    font-family: inherit;
+    color: var(--logo-color);
+    background-color:var(--btn-bgd);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16);        
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-style: none;
+    cursor: pointer;
+   
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--button-hover-background);
+    color: var(--backgroud-color);
+}
+
+/* Portfolio - Projects */
+.project-title {
+    color: var(--nav-header-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.project-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--nav-header-color);
+}
+.logo-footer{
+    color: var(--btn-bgd);
+}
+
+.footer-text{
+    color: var(--btn-bgd);    
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;  
+}
