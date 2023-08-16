@@ -10,6 +10,12 @@
 
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 /* Bases */
 body{
@@ -28,11 +34,47 @@ body{
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
 .section-title-hidden {
     visibility: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {  
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /* header */
