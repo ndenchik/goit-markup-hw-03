@@ -77,6 +77,16 @@ p {
     margin: 0 auto;
 }
 
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+
+.nav{
+    display: flex;
+    gap: 76px;
+}
+
 /* header */
 .logo{
     text-decoration: none;
@@ -110,6 +120,25 @@ p {
 
 address{
     font-style: normal;
+}
+
+.header-container{
+    display: flex;
+}
+.header-link{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+
+.nav{
+    display: flex;
+    gap: 76px;
+    margin-right: 332px;
 }
 
 .header-link-item{
