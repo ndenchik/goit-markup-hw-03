@@ -105,6 +105,9 @@ p {
 }
 
 .nav-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -158,7 +161,7 @@ address{
 
 /* Hero */
 .hero-container {
-    background-color: var(--nav-header-color);
+    background-color: var(--nav-header-color);    
 }
 
 .hero-title {
@@ -168,6 +171,7 @@ address{
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--backgroud-color);
+    width: 496px;
 
 }
 
@@ -188,6 +192,8 @@ address{
      background-color: var(--button-hover-background);
 }
 
+/* Feature section */
+
 .section-feature-title{
     color: var(--nav-header-color);
     font-weight: 500;
@@ -201,6 +207,21 @@ address{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.feature-container{
+    margin: 120px 156px;
+}
+
+.feature-flex{
+    display: flex;
+    gap: 24px;
+}
+
+.feature-item{
+    flex-basis: calc((100% - 24*3) / 4)
+}
+
+/* Doing section */
 .section-title{
     color: var(--nav-header-color);
     font-weight: 700;
@@ -209,7 +230,18 @@ address{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
+
+.doing-flex{
+    display: flex;
+    gap: 24px;
+}
+
+.doing-item{
+    flex-basis: calc((100% - 24*2) / 3)
+}
+/* Team section */
 
 .section-team-container{
     background-color: var(--btn-bgd);
@@ -217,6 +249,8 @@ address{
 
 .team-list-item{
     background-color: var(--backgroud-color);
+    flex-basis: calc((100% - 24*3) / 4)
+
 }
 
 .team-image {
@@ -238,6 +272,12 @@ address{
     text-align: center;
     letter-spacing: 0.02em;
 }
+
+.team-flex{
+    display: flex;
+    gap: 24px;
+}
+
 
 
 /* Portfolio - Filters - Buttons */
