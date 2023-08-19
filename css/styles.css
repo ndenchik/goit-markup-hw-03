@@ -78,6 +78,9 @@ p {
 }
 
 /* header */
+.section-header{
+    border-bottom: 1px solid var(--card-border);
+}
 .logo{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -129,8 +132,8 @@ address{
 
 .header-container{
     display: flex;
-    border-bottom: 1px solid #e7e9fc
-}
+}   
+
 .header-link{
     display: flex;
     gap: 40px; 
@@ -279,6 +282,15 @@ address{
     padding: 120px 0;
 }
 
+.section-title{
+    margin-bottom: 72px;
+}
+
+.team-flex{
+    display: flex;
+    gap: 24px;
+}
+
 .team-list-item{
     background-color: var(--backgroud-color);
     flex-basis: calc((100% - 24px * 3) / 4);
@@ -289,30 +301,25 @@ address{
      background-color: var(--backgroud-color);
 }
 
+.team-member{
+    padding: 32px 0;
+}
+
 .team-title{
     color: var(--nav-header-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;        
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; 
+    margin-bottom: 8px;  
 } 
 
 .team-text{     
     font-size: 16px;
     line-height: 1.5;       
     text-align: center;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
-
-.team-flex{
-    display: flex;
-    gap: 24px;
-}
-
-.team-member{
-    padding: 32px 0;
+    letter-spacing: 0.02em;    
 }
 
 /* Portfolio*/
@@ -357,7 +364,7 @@ address{
     display: flex;
     gap: 24px;
     justify-content: center; 
-    
+    margin-bottom: 72px;    
 }
 
 /* Portfolio - Projects */
@@ -373,9 +380,10 @@ address{
 }
 
 .card-name{    
-    padding: 32px 0 32px 16px;
+    padding: 32px 16px;
     border: 1px solid var(--card-border);
     background: var(--backgroud-color);
+    border-top: none; 
 }
 .project-title {
     color: var(--nav-header-color);
