@@ -6,7 +6,8 @@
     --nav-header-color: #2E2F42;    
     --button-color: #4D5AE5;    
     --btn-bgd:#F4F4FD;
-    --button-hover-background: #404BBF; 
+    --button-hover-background: #404BBF;
+    --card-border: #E7E9FC;
 
 }
 
@@ -39,10 +40,6 @@ ul {
     list-style-type: none;
 }
 
-.section-title-hidden {
-    visibility: hidden;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -66,15 +63,18 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6{
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
 
-.container {  
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+.container {
+   max-width: 1158px;
+   margin: 0 auto;
+   padding: 0 15px;
 }
 
 .nav-list{
@@ -85,6 +85,7 @@ p {
 .nav{
     display: flex;
     gap: 76px;
+    align-items: center;
 }
 
 /* header */
@@ -105,9 +106,9 @@ p {
 }
 
 .nav-link{
-    display: block;
+    display: inline-block;
     padding-top: 24px;
-    padding-bottom: 24;
+    padding-bottom: 24px;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -130,7 +131,8 @@ address{
 }
 .header-link{
     display: flex;
-    gap: 40px;
+    gap: 40px; 
+    align-items: center;   
 }
 
 .nav-list{
@@ -141,17 +143,20 @@ address{
 .nav{
     display: flex;
     gap: 76px;
-    margin-right: 332px;
+    margin-right: 332px;    
 }
 
 .header-link-item{
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     text-decoration: none;
     color: var(--main-color);    
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;       
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;     
 }
 
 .header-link-item:hover,
@@ -161,7 +166,19 @@ address{
 
 /* Hero */
 .hero-container {
-    background-color: var(--nav-header-color);    
+    background-color: var(--nav-header-color); 
+    padding-top: 188px;
+    padding-bottom: 188px;    
+}
+
+.hero-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-item{
+    align-items: center;
 }
 
 .hero-title {
@@ -172,10 +189,10 @@ address{
     letter-spacing: 0.02em;
     color: var(--backgroud-color);
     width: 496px;
-
+    margin-bottom: 48px;
 }
 
-.hero-button {
+.hero-button {    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -184,7 +201,12 @@ address{
     color: var(--backgroud-color);
     background-color: var(--button-color);
     border-style: hidden;
-    cursor: pointer;   
+    border-radius: 4px;
+    cursor: pointer; 
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;  
 }
 
 .hero-button:hover,
@@ -200,6 +222,7 @@ address{
     font-size: 20px;
     line-height: 1.2;       
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .section-feature-text{  
@@ -222,6 +245,10 @@ address{
 }
 
 /* Doing section */
+.section-doing-container{
+    padding-bottom: 120px;
+}
+
 .section-title{
     color: var(--nav-header-color);
     font-weight: 700;
@@ -243,8 +270,9 @@ address{
 }
 /* Team section */
 
-.section-team-container{
+.section-team{
     background-color: var(--btn-bgd);
+    padding: 120px 0;
 }
 
 .team-list-item{
@@ -278,9 +306,17 @@ address{
     gap: 24px;
 }
 
+.team-member{
+    padding: 32px 16px;
+}
+
 
 
 /* Portfolio - Filters - Buttons */
+.btn-container{
+    padding: 96px 72px;
+      
+}
 .button{
     font-family: inherit;
     color: var(--logo-color);
@@ -293,6 +329,9 @@ address{
     letter-spacing: 0.04em;
     border-style: none;
     cursor: pointer;
+    display: flex;
+    padding: 12px 24px;
+    align-items: flex-start;
    
 }
 
@@ -302,13 +341,42 @@ address{
     color: var(--backgroud-color);
 }
 
+.btn-flex{
+    display: flex;
+    gap: 24px;
+    justify-content: center;  
+    
+}
+
+
 /* Portfolio - Projects */
+.card-container{
+    padding-bottom: 120px;
+}
+
+.card-item{
+    flex-basis: calc((100% - 24 * 8) / 9)
+}
+
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;    
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.card-name{    
+    padding: 32px 0 32px 16px;
+    border: 1px solid var(--card-border);
+    background: var(--backgroud-color);
+}
 .project-title {
     color: var(--nav-header-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;    
 }
 
 .project-text {
@@ -316,20 +384,26 @@ address{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--main-color);
+    color: var(--main-color);   
 }
+
+
 
 /* Footer */
 footer {
     background-color: var(--nav-header-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .logo-footer{
-    color: var(--btn-bgd);
+    color: var(--btn-bgd);    
 }
 
 .footer-text{
     color: var(--btn-bgd);    
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;  
+    letter-spacing: 0.02em; 
+    width: 264px; 
+    margin-top: 18px;
 }
