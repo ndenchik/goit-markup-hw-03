@@ -79,7 +79,7 @@ p {
 
 /* header */
 .section-header{
-    border-bottom: 1px solid var(--card-border);
+    border-bottom: 1px solid #e7e9fc;
 }
 .logo{
     text-decoration: none;
