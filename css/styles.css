@@ -77,17 +77,6 @@ p {
    padding: 0 15px;
 }
 
-.nav-list{
-    display: flex;
-    gap: 40px;
-}
-
-.nav{
-    display: flex;
-    gap: 76px;
-    align-items: center;
-}
-
 /* header */
 .logo{
     text-decoration: none;
@@ -99,10 +88,22 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
+    margin-right: 76px
+
 }
 
 .logo-header {
     color: var(--nav-header-color);
+}
+
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+
+.nav{
+    display: flex;    
+    align-items: center;
 }
 
 .nav-link{
@@ -128,6 +129,7 @@ address{
 
 .header-container{
     display: flex;
+    border-bottom: 1px solid #e7e9fc
 }
 .header-link{
     display: flex;
@@ -141,8 +143,7 @@ address{
 }
 
 .nav{
-    display: flex;
-    gap: 76px;
+    display: flex;    
     margin-right: 332px;    
 }
 
@@ -188,7 +189,7 @@ address{
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--backgroud-color);
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 48px;
 }
 
@@ -203,7 +204,10 @@ address{
     border-style: hidden;
     border-radius: 4px;
     cursor: pointer; 
-    display: inline-flex;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;  
@@ -232,7 +236,7 @@ address{
 }
 
 .feature-container{
-    margin: 120px 156px;
+    padding: 120px 0;
 }
 
 .feature-flex{
@@ -241,7 +245,7 @@ address{
 }
 
 .feature-item{
-    flex-basis: calc((100% - 24*3) / 4)
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 /* Doing section */
@@ -277,8 +281,8 @@ address{
 
 .team-list-item{
     background-color: var(--backgroud-color);
-    flex-basis: calc((100% - 24*3) / 4)
-
+    flex-basis: calc((100% - 24px * 3) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-image {
@@ -299,6 +303,7 @@ address{
     line-height: 1.5;       
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-flex{
@@ -307,14 +312,19 @@ address{
 }
 
 .team-member{
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
+/* Portfolio*/
 
+.portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 /* Portfolio - Filters - Buttons */
 .btn-container{
-    padding: 96px 72px;
+    margin-bottom: 72px;
       
 }
 .button{
@@ -332,37 +342,34 @@ address{
     display: flex;
     padding: 12px 24px;
     align-items: flex-start;
-   
+    border: 1px solid var(--card-border);
+    border-radius: 4px;
 }
 
 .button:hover,
 .button:focus {
     background-color: var(--button-hover-background);
     color: var(--backgroud-color);
+    border: 1px solid transparent;
 }
 
 .btn-flex{
     display: flex;
     gap: 24px;
-    justify-content: center;  
+    justify-content: center; 
     
 }
 
-
 /* Portfolio - Projects */
-.card-container{
-    padding-bottom: 120px;
-}
-
-.card-item{
-    flex-basis: calc((100% - 24 * 8) / 9)
-}
-
 .card-flex{
     display: flex;
     flex-wrap: wrap;    
     row-gap: 48px;
     column-gap: 24px;
+}
+
+.card{
+    calc((100% - 48px) / 3);
 }
 
 .card-name{    
@@ -395,6 +402,7 @@ footer {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .logo-footer{
     color: var(--btn-bgd);    
 }
@@ -404,6 +412,10 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
-    width: 264px; 
-    margin-top: 18px;
+    width: 264px;     
+}
+
+.footer-item{
+    display: inline-block;
+    margin-bottom: 16px;
 }
