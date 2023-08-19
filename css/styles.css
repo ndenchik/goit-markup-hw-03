@@ -79,8 +79,9 @@ p {
 
 /* header */
 .section-header{
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid var(--card-border, #E7E9FC);
 }
+
 .logo{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -376,7 +377,7 @@ address{
 }
 
 .card{
-    calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .card-name{    
